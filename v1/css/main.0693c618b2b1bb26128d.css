@@ -9949,7 +9949,11 @@ body,
     color: #2196F3; }
   .theme-gray .app-overlay,
   .theme-dark .app-overlay {
-    background: rgba(0, 0, 0, 0.7); }
+    background: rgba(0, 0, 0, 0.7);
+    color: rgba(255, 255, 255, 0.7); }
+    .theme-gray .app-overlay input,
+    .theme-dark .app-overlay input {
+      color: rgba(255, 255, 255, 0.7); }
     .theme-gray .app-overlay a.overlay-close,
     .theme-dark .app-overlay a.overlay-close {
       color: #636c72; }
@@ -12327,9 +12331,9 @@ a.item-card {
 
 @keyframes changebar {
   0% {
-    background-color: #66BB6A; }
+    background-color: #9CCC65; }
   33.3% {
-    background-color: #66BB6A; }
+    background-color: #9CCC65; }
   33.33% {
     background-color: #FFCA28; }
   66.6% {
@@ -12339,7 +12343,7 @@ a.item-card {
   99.9% {
     background-color: #EF5350; }
   100% {
-    background-color: #66BB6A; } }
+    background-color: #9CCC65; } }
 
 .mdl-card.mdl-card-full-width {
   width: 100%; }
@@ -12639,7 +12643,6 @@ img.img80_80 {
     display: block;
     text-align: center;
     font-size: 15px;
-    font-weight: bold;
     color: #fff;
     transform: rotate(45deg);
     padding: 7px 0;
@@ -12990,6 +12993,9 @@ a.btn-sm {
   .md-menu-content a[md-menu-item]:hover, .md-menu-content a[md-menu-item]:focus {
     color: rgba(0, 0, 0, 0.87); }
 
+[md-tab-nav-bar], .md-tab-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+
 md-input {
   width: 100%; }
 
@@ -13061,6 +13067,35 @@ md-input-container:not(.ng-pristine).ng-valid .md-input-underline {
 
 .page-with-tabs > md-tab-group > md-tab-header {
   background-color: rgba(0, 0, 0, 0.05); }
+
+.theme-gray [md-raised-button]:not(.md-primary):not(.md-accent):not(.md-warn),
+.theme-dark [md-raised-button]:not(.md-primary):not(.md-accent):not(.md-warn) {
+  color: rgba(0, 0, 0, 0.87); }
+
+.theme-gray md-list md-list-item, .theme-gray md-list a[md-list-item], .theme-gray md-nav-list md-list-item, .theme-gray md-nav-list a[md-list-item],
+.theme-dark md-list md-list-item,
+.theme-dark md-list a[md-list-item],
+.theme-dark md-nav-list md-list-item,
+.theme-dark md-nav-list a[md-list-item] {
+  color: rgba(255, 255, 255, 0.7); }
+
+.theme-gray md-list [md-subheader], .theme-gray md-nav-list [md-subheader],
+.theme-dark md-list [md-subheader],
+.theme-dark md-nav-list [md-subheader] {
+  color: rgba(255, 255, 255, 0.25); }
+
+.theme-gray .md-input-placeholder,
+.theme-gray .md-select-placeholder,
+.theme-dark .md-input-placeholder,
+.theme-dark .md-select-placeholder {
+  color: rgba(255, 255, 255, 0.25); }
+
+.theme-gray .theme-light md-list md-list-item, .theme-gray .theme-light md-list a[md-list-item], .theme-gray .theme-light md-nav-list md-list-item, .theme-gray .theme-light md-nav-list a[md-list-item],
+.theme-dark .theme-light md-list md-list-item,
+.theme-dark .theme-light md-list a[md-list-item],
+.theme-dark .theme-light md-nav-list md-list-item,
+.theme-dark .theme-light md-nav-list a[md-list-item] {
+  color: rgba(0, 0, 0, 0.87); }
 
 .typo-styles dt {
   display: block;
@@ -13244,7 +13279,7 @@ md-input-container:not(.ng-pristine).ng-valid .md-input-underline {
 .page-auth {
   background-color: #eceeef;
   min-height: 100%;
-  background: url(http://iarouse.com/dist-angular2-material/v1/fonts/1.b2afaf2b30718b2e6a2501a74ee91d02.png?) no-repeat center center fixed;
+  background: url(http://iarouse.com/dist-angular2-material/v1/fonts/2.469e003e44a67c7ef137026905ccb8f3.png?) no-repeat center center fixed;
   background-size: cover;
   padding: 0 10px; }
   .page-auth .card {
@@ -13344,7 +13379,7 @@ md-input-container:not(.ng-pristine).ng-valid .md-input-underline {
 
 .page-lock {
   height: 100%;
-  background: url(http://iarouse.com/dist-angular2-material/v1/fonts/1.b2afaf2b30718b2e6a2501a74ee91d02.png?) no-repeat center center fixed;
+  background: url(http://iarouse.com/dist-angular2-material/v1/fonts/2.469e003e44a67c7ef137026905ccb8f3.png?) no-repeat center center fixed;
   background-size: cover; }
   .page-lock .lock-centered {
     position: absolute;
@@ -13688,4 +13723,4 @@ md-input-container:not(.ng-pristine).ng-valid .md-input-underline {
 .theme-dark .blog-item .blog-info .category a {
   color: rgba(255, 255, 255, 0.7); }
 
-/*# sourceMappingURL=main.4d66053471979e98aefb.css.map*/
+/*# sourceMappingURL=main.0693c618b2b1bb26128d.css.map*/
